@@ -1,0 +1,25 @@
+<mat-card [ngStyle] ="{background: 'aliceblue', width:' 300px;' }">
+  <mat-card-title [ngStyle] ="{background:'aquamarine', color:'rgb(255, 13, 174)', width:'80px;' }">Minhas Tarefas</mat-card-title>
+  
+    <input type="text" id="input" placeholder=" Adicionar Tarefa" #InputTarefa >
+
+
+  <button mat-mini-fab color="primary"
+  (click)="adicionar(InputTarefa.value)"> +
+  </button>
+
+  <ul *ngFor=" let tarefa of listaTarefas"> 
+    <li>
+      {{tarefa.nome}} 
+  </li>
+  <button mat-mini-fab color="primary"  (click)="excluir(tarefa.id)"> X
+  </button>
+</ul>  
+  <mat-divider></mat-divider>
+  <mat-card-footer [ngStyle] ="{background: 'lilas', width:'10px;' }">
+   <p>Você tem  {{listaTarefas.length}} Tarefa(s) pendente(s) </p>
+    <button mat-raised-button color="primary" 
+    (click)="excluirTudo(); openSnackBar('TAREFAS EXCLUIDAS', 'FECHAR')"> Apagar </button>
+  </mat-card-footer>
+
+</mat-card> 

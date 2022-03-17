@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+
+mat-card-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+input{
+    width: 300px;
+    height:40px ;
+    margin-bottom: 40px;
+    border: 0.5px solid rgb(165, 165, 165);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: medium;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+    display:flex;
+    align-items: center;
+    justify-content: baseline;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+li{
+    list-style-type: none;
+    padding-bottom: 5px;
+    min-width: 300px;
+    border-bottom: 1px solid rgb(63, 60, 60);
+    margin:0;
+
+    
+}
+
+li:hover{
+    background:rgb(206, 204, 204);
+}
+
+mat-card-footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
